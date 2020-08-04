@@ -1,0 +1,6 @@
+class Solution(object):
+    def addDigits(self, num):
+        while num>9:
+            quo,rem = divmod(num,10)
+            num = quo + rem
+        return num
