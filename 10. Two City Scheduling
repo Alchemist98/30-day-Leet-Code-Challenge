@@ -1,0 +1,11 @@
+class Solution(object):
+    def twoCitySchedCost(self, costs):
+        sorted_cost = sorted(costs , key = lambda x : x[0] - x[1])
+        min_cost = 0
+        
+        for i, cost in enumerate(sorted_cost):
+            if i<len(costs)//2:
+                min_cost += sorted_cost[i][0]
+            else:
+                min_cost += sorted_cost[i][1]
+        return min_cost
