@@ -1,0 +1,12 @@
+class Solution(object):
+    def lastStoneWeight(self, stones):
+        arr = sorted(stones)
+        a = 0
+        b = 0
+        while len(arr)>1:
+            arr.sort()
+            a,b = arr[len(arr)-2:]
+            diff = abs(b-a)
+            del arr[len(arr)-2:]
+            arr.append(diff)
+        return arr[0]
