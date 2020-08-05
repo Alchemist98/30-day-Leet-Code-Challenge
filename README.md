@@ -15,3 +15,5 @@
  - Move Zeroes
  
  - Add Digits
+
+ - Last Stone Weight
