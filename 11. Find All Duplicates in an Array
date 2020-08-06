@@ -1,0 +1,9 @@
+class Solution(object):
+    def findDuplicates(self, nums):
+        sorted_array = sorted(nums)
+        arr = []
+        n = len(sorted_array)
+        for i in range(0,n-1):
+            if sorted_array[i] == sorted_array[i+1]:
+                arr.append(sorted_array[i])
+        return arr
