@@ -1,0 +1,10 @@
+class Solution(object):
+    def groupAnagrams(self, strs):
+        strs_sort = [''.join(sorted(i)) for i in strs]
+        anag_dict = {}
+        for i in range(len(strs_sort)):
+            if strs_sort[i] not in anag_dict:
+                anag_dict[strs_sort[i]] = [strs[i]]
+            else:
+                anag_dict[strs_sort[i]].append(strs[i])
+        return anag_dict.values()
