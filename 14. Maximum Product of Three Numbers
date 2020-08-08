@@ -1,0 +1,8 @@
+class Solution(object):
+    def maximumProduct(self, nums):
+        
+        arr = sorted(nums)
+        n = len(arr)
+        return max(arr[0]*arr[1]*arr[n-1],arr[n-1]*arr[n-2]*arr[n-3])       
+        
+        
