@@ -27,3 +27,5 @@
  - Product of Array except self
  
  - Maximum Product of Three Numbers
+ 
+ - Remove Element
