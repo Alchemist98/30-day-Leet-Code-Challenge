@@ -29,3 +29,5 @@
  - Maximum Product of Three Numbers
  
  - Remove Element
+ 
+ - Valid Anagram
