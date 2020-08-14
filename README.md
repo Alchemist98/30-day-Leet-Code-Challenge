@@ -35,3 +35,5 @@
  - Intersection of Two Arrays
  
  - Count Inversion in an array
+ 
+ - Binary Array Sorting
