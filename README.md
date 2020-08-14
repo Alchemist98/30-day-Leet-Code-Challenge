@@ -39,3 +39,5 @@
  - Binary Array Sorting
  
  - Contains Duplicate
+ 
+ - Plus One
