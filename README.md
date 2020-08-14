@@ -37,3 +37,5 @@
  - Count Inversion in an array
  
  - Binary Array Sorting
+ 
+ - Contains Duplicate
