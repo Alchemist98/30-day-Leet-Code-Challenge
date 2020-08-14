@@ -1,0 +1,11 @@
+vector<int> SortBinaryArray(vector<int> binArray)
+{
+    int count = 0;
+    for(int i=0;i<binArray.size();i++){
+        if (binArray[i]==0){
+            swap(binArray[i],binArray[count]);
+            count++;
+        }
+    }
+    return binArray;
+}
