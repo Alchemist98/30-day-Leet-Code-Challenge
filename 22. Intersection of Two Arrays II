@@ -1,0 +1,20 @@
+class Solution:
+    def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        a = len(nums1)
+        b = len(nums2)
+        ans = []
+        
+        if a >= b:
+            for n in nums2:
+                if n in nums1:
+                    ans.append(n)
+                    nums1[nums1.index(n)] = None
+        else:
+            for n in nums1:
+                if n in nums2:
+                    ans.append(n)
+                    nums2[nums2.index(n)] = None
+        
+        return ans
+                
+        
